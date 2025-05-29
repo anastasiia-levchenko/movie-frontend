@@ -1,8 +1,15 @@
 import MovieCard from "../components/MovieCard.jsx";
 import {useState} from "react";
+import "../css/Home.css";
 
 function Home() {
-    const movies = []
+    const movies = [
+        {id: 1, title: "John Wick", release_date: "2022"},
+        {id: 2, title: "Terminator", release_date: "2021"},
+        {id: 3, title: "Terrifier", release_date: "2020"},
+        {id: 4, title: "The Saw", release_date: "2019"},
+        {id: 5, title: "Shining", release_date: "2018"}
+    ]
 
     const [searchQuery, setSearchQuery] = useState('');
 
